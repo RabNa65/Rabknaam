@@ -30,15 +30,12 @@ days = st.number_input("Enter Days to Search (1-30):", min_value=1, max_value=30
 
 keywords = [
 
- "Motivation Stories", "Reddit Update", "Reddit Motivation Advice", "Reddit Motivation",
-
-"Reddit Success", "AITA Update", "Success Story", "Success Story",
-
-"Daily Motivation", "AskReddit Daily Motivation", "Daily Reddit",
-
-"Success Story Actually Happened", "Success Story Real", "True Success Story",
-
-"Cheat Exposed"
+"Success Motivation", "Self Improvement", "Discipline and Focus", "Entrepreneur Mindset",
+    "Success Stories", "Life Advice", "Productivity Tips", "Mindset for Success",
+    "Goal Setting", "Personal Growth", "Motivational Shorts", "Wealth Mindset",
+    "Morning Routine", "Self Discipline", "Overcoming Failure", "Success Habits",
+    "Success Blueprint 15", "Motivational Speech", "Daily Motivation", "Growth Mindset",
+    "Inspiration for Success", "Dream Big", "Hustle Mindset", "Success Lessons"
 
 ]
 
@@ -166,7 +163,7 @@ if st.button("Fetch Data"):
                 subs = int(channel["statistics"].get("subscriberCount", 0))
 
 
-                if subs < 1000:  # Only include channels with fewer than 1,000 subscribers
+                if subs < 1000:  # Only include channels with fewer than 3,000 subscribers
 
                     all_results.append({
 
